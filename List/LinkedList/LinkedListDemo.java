@@ -51,6 +51,18 @@ public class LinkedListDemo {
         System.out.println(linkedList.contains(30)); // true    
         System.out.println(linkedList.contains(100)); // false
 
+        // indexOf() method to find the index of an element
+        System.out.println("Index of element 30: " + linkedList.indexOf(30)); // 2
+        System.out.println("Index of element 100: " + linkedList.indexOf(100)); // -1
+
+        //add element at specific index
+        linkedList.add(2, 25); // Adds 25 at index 2
+        System.out.println("LinkedList after adding 25 at index 2: " + linkedList);
+
+        //set element at specific index
+        linkedList.set(2, 35); // Sets the element at index 2 to 35
+        System.out.println("LinkedList after setting 35 at index 2: " + linkedList);
+
         // Removing an element from the LinkedList
         linkedList.remove(2); // Removes the element at index 2 
         System.out.println("LinkedList after removing element at index 2: " + linkedList);
@@ -67,6 +79,19 @@ public class LinkedListDemo {
         linkedList.add(50);
         linkedList.set(2, 35); // Sets the element at index 2 to 35
         System.out.println("LinkedList after setting 35 at index 2: " + linkedList);
+
+        // Displaying the elements of the LinkedList using a loop
+        System.out.print("Displaying the elements of the LinkedList using a loop: ");
+        for (int i = 0; i < linkedList.size(); i++) {
+            System.out.print(linkedList.get(i) + " ");
+        }
+
+        // For-each loop to display elements
+        System.out.print("\nDisplaying the elements of the LinkedList using a for-each loop: ");
+        for (int num : linkedList) {
+            System.out.print(num + " ");
+        }
+
         
     }
 }
